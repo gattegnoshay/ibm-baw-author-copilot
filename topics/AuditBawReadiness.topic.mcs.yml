@@ -1,0 +1,19 @@
+# Name: Audit Readiness
+kind: AdaptiveDialog
+modelDescription: Guides scoring a process design for audit readiness across six domains.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Audit Readiness
+    triggerQueries:
+      - audit readiness
+      - is my process audit ready
+      - audit-baw-readiness
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_Z6sVkmNQ
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding audit-baw-readiness. Explain the six domains (traceability, SoD, access control, SLA, data completeness, error handling) and scorecard format.

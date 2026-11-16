@@ -1,0 +1,6 @@
+# Name: IBM BAW Product Page
+# High-level product overview for IBM Business Automation Workflow.
+kind: KnowledgeSourceConfiguration
+source:
+  kind: PublicSiteSearchSource
+  site: https://www.ibm.com/products/business-automation-workflow

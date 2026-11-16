@@ -1,0 +1,20 @@
+# Name: External Task UI
+kind: AdaptiveDialog
+modelDescription: Guides building a Custom URL external task UI for BAW human tasks.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: External Task UI
+    triggerQueries:
+      - external task UI
+      - custom URL task
+      - BAW user-tasks UI
+      - create-baw-external-task-ui
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_Zy1SLHoc
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding create-baw-external-task-ui. Explain Express + React/Carbon pattern, /bpm/user-tasks API usage conceptually, schema export, and External Implementation URL with {tw.system.task_id}.

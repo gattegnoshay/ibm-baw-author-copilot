@@ -1,0 +1,19 @@
+# Name: Test Service Flows
+kind: AdaptiveDialog
+modelDescription: Helps design and interpret Service Flow test suites against live BAW.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Test Service Flows
+    triggerQueries:
+      - test service flow
+      - service flow tests
+      - test-baw-service-flows
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_ZOn7qxe5
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding test-baw-service-flows. Explain discovering contracts, happy/error/boundary cases, and pass/fail report structure. Live invoke requires BAW credentials outside this agent.

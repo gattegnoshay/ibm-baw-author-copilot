@@ -1,0 +1,6 @@
+# Name: IBM BAW Product Docs
+# Public IBM documentation scope for Business Automation Workflow guidance.
+kind: KnowledgeSourceConfiguration
+source:
+  kind: PublicSiteSearchSource
+  site: https://www.ibm.com/docs

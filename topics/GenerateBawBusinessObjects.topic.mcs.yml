@@ -1,0 +1,21 @@
+# Name: Generate Business Objects
+kind: AdaptiveDialog
+modelDescription: Helps create or modify BAW Business Object OpenAPI import files.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Generate Business Objects
+    triggerQueries:
+      - generate business objects
+      - BAW BO
+      - import business objects
+      - OpenAPI BO
+      - generate-baw-business-objects
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_WL5EP9zg
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding generate-baw-business-objects. Explain BAW OpenAPI 3.0 BO import format, Data menu import steps, and safety warnings for rename/remove. Provide example field structures when asked.

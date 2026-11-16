@@ -1,0 +1,21 @@
+# Name: Generate BAW BPMN
+kind: AdaptiveDialog
+modelDescription: Helps generate BAW-importable BPMN 2.0 and process JSON configs for processes and service flows.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Generate BAW BPMN
+    triggerQueries:
+      - generate BPMN
+      - create BAW process
+      - BAW importable BPMN
+      - turn SOP into BAW process
+      - generate-baw-bpmn
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_eRz935x7
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding generate-baw-bpmn. Explain capturing process JSON, running the deterministic generator, producing .bpmn/.zip, and BAW importer constraints (no lanes, pools, or diagram/DI). Give step-by-step import guidance for WebPD. Do not claim to write files on the user's machine unless they ask for example content.

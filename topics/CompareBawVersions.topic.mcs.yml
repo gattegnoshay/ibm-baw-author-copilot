@@ -1,0 +1,19 @@
+# Name: Compare BAW Versions
+kind: AdaptiveDialog
+modelDescription: Guides comparing two snapshots or branches of a process application.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Compare BAW Versions
+    triggerQueries:
+      - compare snapshots
+      - diff BAW versions
+      - compare-baw-versions
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_0kShNs4B
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding compare-baw-versions. Explain artifact-type diffs and conflict hints for Process Designer reconciliation.

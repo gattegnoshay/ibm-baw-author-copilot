@@ -1,0 +1,20 @@
+# Name: Dependency Mapper
+kind: AdaptiveDialog
+modelDescription: Guides mapping BO and variable dependencies across a TWX.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Dependency Mapper
+    triggerQueries:
+      - dependency map
+      - where is BO used
+      - circular dependency BAW
+      - baw-dependency-mapper
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_rF9ULa53
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding baw-dependency-mapper. Explain TWX analysis outputs: declarations, read/write, bindings, circular refs, over-coupling.

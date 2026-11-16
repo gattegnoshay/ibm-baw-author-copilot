@@ -1,0 +1,25 @@
+# Name: Fallback
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnUnknownIntent
+  id: main
+  priority: -1
+  actions:
+    - kind: ConditionGroup
+      id: conditionGroup_nwJMzz45
+      conditions:
+        - id: conditionItem_trbeNGx8
+          condition: =System.FallbackCount < 3
+          actions:
+            - kind: SendActivity
+              id: sendMessage_7D5YnRMM
+              activity:
+                text:
+                  - I'm not sure I understand. Try asking about a specific BAW skill, for example BPMN generation, portals, process inspection, or audit readiness.
+                  - I didn't quite get that. Rephrase with a BAW task like generate BPMN, review code, or troubleshoot logs.
+      elseActions:
+        - kind: SendActivity
+          id: sendMessage_CAOMERbP
+          activity:
+            text:
+              - I'm still having trouble. Browse my conversation starters or ask which BAW capabilities I cover.

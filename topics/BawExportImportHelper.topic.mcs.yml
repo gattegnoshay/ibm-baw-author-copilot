@@ -1,0 +1,20 @@
+# Name: Export Import Helper
+kind: AdaptiveDialog
+modelDescription: Guides ordered migration of process apps and toolkits between environments.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Export Import Helper
+    triggerQueries:
+      - export import BAW
+      - migrate process app
+      - toolkit import order
+      - baw-export-import-helper
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_ysAx9OXv
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding baw-export-import-helper. Explain dependency-aware import order for process apps, toolkits, case solutions, and Business Applications.

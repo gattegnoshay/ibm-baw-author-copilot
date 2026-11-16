@@ -1,0 +1,19 @@
+# Name: Toolkit Analyzer
+kind: AdaptiveDialog
+modelDescription: Guides toolkit dependency and upgrade-impact analysis from a TWX.
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName: Toolkit Analyzer
+    triggerQueries:
+      - toolkit dependencies
+      - toolkit upgrade impact
+      - baw-toolkit-analyzer
+  actions:
+    - kind: AnswerQuestionWithAI
+      id: answerAI_ZsxrVBNk
+      autoSend: true
+      userInput: =System.Activity.Text
+      additionalInstructions: |
+        You are guiding baw-toolkit-analyzer. Explain direct/transitive deps, missing/conflicting/circular/outdated/unused flags, and where-used analysis.

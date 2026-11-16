@@ -1,0 +1,6 @@
+﻿# Name: This Agent Repository
+# Use repo ROOT only as Copilot knowledge source.
+kind: KnowledgeSourceConfiguration
+source:
+  kind: PublicSiteSearchSource
+  site: https://github.com/gattegnoshay/ibm-baw-author-copilot
