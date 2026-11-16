@@ -1,34 +1,26 @@
-﻿# Author / design-time
+﻿# IBM BAW Author
 
-This repository packages IBM BAW **GitHub Copilot agent skills** (Agent Skills standard).
+Modern **Microsoft Copilot harness** agent package (no topics).
 
-## How Copilot uses this repo
+Per [Microsoft Learn – Copilot harness](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview) and [Skills overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/skills-overview):
 
-Skills live under `.github/skills/<skill-name>/SKILL.md`. Copilot discovers and loads them automatically when relevant — do **not** treat this repo as a website knowledge link only.
+| Component | Location |
+|-----------|----------|
+| Instructions | `settings.mcs.yml` |
+| Skills | `behaviors/<skill>/SKILL.md` (+ `skill.mcs.yml`) |
+| Knowledge | `capabilities/knowledge/` |
+| Tools | add connectors/MCP in Copilot Studio as needed |
 
-When asked to help with IBM Business Automation Workflow (Author / design-time) tasks, prefer the matching skill under `.github/skills/`.
+Topics are **not** used. Skills replace topic flows for the Microsoft Copilot harness.
 
-## Installed skills
+## GitHub Copilot
 
-- `generate-baw-bpmn`
-- `generate-baw-business-objects`
-- `create-baw-portal`
-- `create-baw-widget`
-- `create-baw-external-task-ui`
-- `generate-baw-tests`
-- `test-baw-service-flows`
-- `review-baw-code`
-- `process-compliance-violation-detection`
-- `baw-project-doc`
-- `baw-dependency-mapper`
-- `baw-toolkit-analyzer`
-- `baw-endpoint-validation`
-- `baw-export-import-helper`
-- `audit-baw-readiness`
-- `compare-baw-versions`
+The same skill packs are also under `.github/skills/` for GitHub Copilot agent skill discovery.
 
-## Optional: Copilot Studio YAML
+## Import
 
-Legacy Copilot Studio MCS YAML (topics/settings) is under `copilot-studio/` for import into Microsoft Copilot Studio. Primary capability is the `.github/skills` pack.
+1. Create a **Microsoft Copilot harness** agent in Copilot Studio (not classic/standard topics agent).
+2. Upload each folder under `behaviors/` as a skill package, **or** sync via Copilot Studio VS Code / CLI (`template: cliagent-`).
+3. Paste/adapt instructions from `settings.mcs.yml`.
 
-Source: https://github.com/ibmbpm/ibm-baw-skills-and-bob-modes (Apache-2.0)
+Source skills: [ibmbpm/ibm-baw-skills-and-bob-modes](https://github.com/ibmbpm/ibm-baw-skills-and-bob-modes) (Apache-2.0)

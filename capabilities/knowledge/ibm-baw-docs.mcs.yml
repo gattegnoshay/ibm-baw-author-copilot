@@ -1,0 +1,7 @@
+﻿mcs.metadata:
+  componentName: ibm-baw-docs
+  description: IBM product documentation for Business Automation Workflow
+kind: KnowledgeSourceConfiguration
+source:
+  kind: PublicSiteSearchSource
+  site: https://www.ibm.com/docs

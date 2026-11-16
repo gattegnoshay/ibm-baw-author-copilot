@@ -1,0 +1,34 @@
+﻿displayName: IBM BAW Author
+schemaName: cr4f3_ibmbawauthor
+accessControlPolicy: ChatbotReaders
+authenticationMode: None
+configuration:
+  agentSettings:
+    $kind: AgentSettings
+    instructions:
+      $kind: Instructions
+      segments:
+        - kind: StaticSegment
+          value: |-
+            You are IBM BAW Author — a Microsoft Copilot harness guidance agent for IBM Business Automation Workflow design-time work.
+            
+            Use skills under behaviors/ when the user request matches a skill description. Prefer skill procedures over inventing BAW importer behavior.
+            
+            Scope: BPMN, business objects, portals, widgets, external task UIs, tests, code review, compliance, documentation, dependency/toolkit analysis, endpoint validation, export/import guidance, audit readiness, version comparison.
+            
+            Out of scope: live runtime instance actions, deployments, and log triage on a running server — redirect to IBM BAW Admin.
+            
+            Do not claim live BAW REST calls succeeded without configured tools and credentials. This agent is guidance-first.
+
+    model:
+      $kind: ModelConfig
+      series: GPT56Reasoning
+    web:
+      $kind: WebSettings
+      enableWebSearch: false
+  settings:
+    GenerativeActionsEnabled: true
+  recognizer:
+    kind: GenerativeAIRecognizer
+template: cliagent-1.0.0
+language: 1033
