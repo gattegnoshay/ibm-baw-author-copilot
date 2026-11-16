@@ -1,20 +1,34 @@
-﻿# IBM BAW Author Copilot Studio guidance agent
+﻿# Author / design-time
 
-Standalone Microsoft Copilot Studio guidance agent for IBM Business Automation Workflow.
+This repository packages IBM BAW **GitHub Copilot agent skills** (Agent Skills standard).
 
-## Knowledge source URL
+## How Copilot uses this repo
 
-Use this repository **root** as the knowledge source:
+Skills live under `.github/skills/<skill-name>/SKILL.md`. Copilot discovers and loads them automatically when relevant — do **not** treat this repo as a website knowledge link only.
 
-`https://github.com/gattegnoshay/ibm-baw-author-copilot`
+When asked to help with IBM Business Automation Workflow (Author / design-time) tasks, prefer the matching skill under `.github/skills/`.
 
-Do **not** use nested `/tree/...` paths.
+## Installed skills
 
-## Contents
+- `generate-baw-bpmn`
+- `generate-baw-business-objects`
+- `create-baw-portal`
+- `create-baw-widget`
+- `create-baw-external-task-ui`
+- `generate-baw-tests`
+- `test-baw-service-flows`
+- `review-baw-code`
+- `process-compliance-violation-detection`
+- `baw-project-doc`
+- `baw-dependency-mapper`
+- `baw-toolkit-analyzer`
+- `baw-endpoint-validation`
+- `baw-export-import-helper`
+- `audit-baw-readiness`
+- `compare-baw-versions`
 
-- `agent.mcs.yml` / `settings.mcs.yml` — agent definition
-- `topics/` — conversation topics
-- `knowledge/` — knowledge source configs
-- `assets/` — skill knowledge packs
+## Optional: Copilot Studio YAML
 
-Source skills: [ibmbpm/ibm-baw-skills-and-bob-modes](https://github.com/ibmbpm/ibm-baw-skills-and-bob-modes)
+Legacy Copilot Studio MCS YAML (topics/settings) is under `copilot-studio/` for import into Microsoft Copilot Studio. Primary capability is the `.github/skills` pack.
+
+Source: https://github.com/ibmbpm/ibm-baw-skills-and-bob-modes (Apache-2.0)
