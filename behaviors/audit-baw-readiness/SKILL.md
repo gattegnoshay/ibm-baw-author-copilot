@@ -1,17 +1,7 @@
 ---
 name: audit-baw-readiness
 description: "Evaluates an IBM Business Automation Workflow (BAW) process application's design for compliance and audit readiness — scores six internal design-time control domains (traceability, separation of duties, access control, SLA/timeliness, data completeness, error handling) and produces a Markdown scorecard with specific gaps and remediation steps. Use when someone asks if a process application is ready for an audit, checks internal control design readiness, or wants to score design-time controls. This skill inspects process design — not running instances and not external regulatory policies. For evaluating process models against external policies and regulations (SOX, GDPR, ISO) with remediation paths, use process-compliance-violation-detection. Do not use for live process instances (inspect-baw-processes) or authoring processes (generate-baw-bpmn)."
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Edit
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: BAW Audit Readiness
-  short_description: Score a BAW process application across six compliance domains and produce a gap-and-remediation scorecard.
-  author: IBM BAW Team
+license: "Apache-2.0"
 ---
 > **⚠️ REST only — MCP is not supported by this skill.** All BAW interactions use the BAW REST API exclusively via HTTP calls to `{BAW_BASE_URL}`. Do not call any MCP tools at any point — regardless of whether an MCP server is connected or not. This skill has no MCP dependency. If you find yourself reaching for an MCP tool, stop and use the REST equivalent from `references/baw-rest.md` instead.
 

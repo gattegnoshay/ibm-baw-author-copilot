@@ -1,29 +1,7 @@
 ---
 name: review-baw-code
-description: >
-  Perform automated, severity-ranked code quality reviews across IBM BAW artifacts —
-  server scripts, coach (client-side) scripts, integration service scripts, HTML, CSS,
-  and optionally a Checkstyle XML report. Accepts an uploaded .twx file directly and
-  extracts it automatically. Flags hardcoded values (URLs, credentials, IPs), undeclared
-  tw.local.* variables, inconsistent error-logging patterns, synchronous Thread.sleep
-  calls, unbounded loops, and other performance anti-patterns. Each finding includes the
-  artifact name, line/location, rule violated, severity (Critical / High / Medium / Low),
-  and a recommended fix. Use whenever a BAW developer says "review my scripts", "check
-  for hardcoded values", "find unused variables", "audit my BAW code", "analyze my TWX
-  artifacts", "run a code review before deployment", uploads a .twx file, or provides a
-  Checkstyle report to ingest. Also triggers when the user mentions code quality, code
-  smell, anti-patterns, or performance issues in BAW artifacts.
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Edit
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: BAW Code Review
-  short_description: Automated severity-ranked code quality review of IBM BAW artifacts — scripts, coaches, and services — from an uploaded TWX file.
-  author: IBM BAW Team
+description: "Perform automated, severity-ranked code quality reviews across IBM BAW artifacts — server scripts, coach (client-side) scripts, integration service scripts, HTML, CSS, and optionally a Checkstyle XML report. Accepts an uploaded .twx file directly and extracts it automatically. Flags hardcoded values (URLs, credentials, IPs), undeclared tw.local.* variables, inconsistent error-logging patterns, synchronous Thread.sleep calls, unbounded loops, and other performance anti-patterns. Each finding includes the artifact name, line/location, rule violated, severity (Critical / High / Medium / Low), and a recommended fix. Use whenever a BAW developer says \"review my scripts\", \"check for hardcoded values\", \"find unused variables\", \"audit my BAW code\", \"analyze my TWX artifacts\", \"run a code review before deployment\", uploads a .twx file, or provides a Checkstyle report to ingest. Also triggers when the user mentions code quality, code smell, anti-patterns, or performance issues in BAW artifacts."
+license: "Apache-2.0"
 ---
 # Review BAW code
 

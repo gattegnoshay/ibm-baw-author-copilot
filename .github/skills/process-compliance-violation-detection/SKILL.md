@@ -1,18 +1,7 @@
 ---
 name: process-compliance-violation-detection
-description: >
-
-  Evaluate IBM BAW and CP4BA process applications against compliance, governance, regulatory, business policy, architecture, or standards documents (for example, SOX, GDPR, ISO, or corporate policies). Detects violations, gaps, risks, and missing controls, then recommends remediation using documented BAW/CP4BA platform capabilities. Use for: compliance checks, policy audits, governance reviews, flagging violations before production, or when the user says "does this process comply", "compliance check", "check against our policy", "SOX compliance", "GDPR compliance", "process governance review", "flag violations", or "compliance violations". For scoring design-time internal control domains on a scorecard without external policy documents, use audit-baw-readiness. Do not use for process authoring (generate-baw-bpmn) or live runtime process inspection (inspect-baw-processes).
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Edit
-metadata:
-  version: "1.0.0"
-  display_name: BAW Process Compliance Violation Detection
-  short_description: Evaluate a BAW process app against compliance and governance documents to detect violations, gaps, and missing controls.
-  author: IBM BAW Team
+description: "Evaluate IBM BAW and CP4BA process applications against compliance, governance, regulatory, business policy, architecture, or standards documents (for example, SOX, GDPR, ISO, or corporate policies). Detects violations, gaps, risks, and missing controls, then recommends remediation using documented BAW/CP4BA platform capabilities. Use for: compliance checks, policy audits, governance reviews, flagging violations before production, or when the user says \"does this process comply\", \"compliance check\", \"check against our policy\", \"SOX compliance\", \"GDPR compliance\", \"process governance review\", \"flag violations\", or \"compliance violations\". For scoring design-time internal control domains on a scorecard without external policy documents, use audit-baw-readiness. Do not use for process authoring (generate-baw-bpmn) or live runtime process inspection (inspect-baw-processes)."
+license: "Apache-2.0"
 ---
 > **Important: IBM Business Automation Workflow (BAW) server interactions use REST only.** All calls to a live BAW server use the BAW REST API exclusively through HTTP calls to `{BAW_BASE_URL}`. Do not call any MCP tools for BAW server operations. If you find yourself reaching for an MCP tool to interact with a BAW server, stop and use the REST equivalent from `references/baw-rest.md` instead.
 

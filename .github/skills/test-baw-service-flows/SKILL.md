@@ -1,19 +1,8 @@
 ---
 name: test-baw-service-flows
 description: "Generate and execute automated tests for IBM BAW Service Flows. Phase A discovers the Service Flow, reads its input/output contract, and produces a structured test suite covering happy path, error paths, and boundary conditions. Phase B invokes the Service Flow — preferring the exposed Automation Service OpenAPI endpoint, falling back to direct service start, then to a process fallback — and returns a structured test report. Use when the user says 'test this service flow', 'generate tests for my service', 'validate my integration service', 'run service flow tests', 'test the automation service', or wants to test a BAW integration service without building a test harness manually. Also use proactively when a user shares a Service Flow and asks if it works, wants to verify inputs and outputs, or asks how to test before going to production."
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Edit
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: Test BAW Service Flows
-  short_description: Generate and execute automated test suites for IBM BAW Service Flows against live BAW and CP4BA environments.
-  author: IBM BAW Team
+license: "Apache-2.0"
 ---
-
 # Test BAW Service Flows
 
 Generate comprehensive test suites for IBM BAW Service Flows and execute them against a live environment, capturing structured pass/fail results usable for regression tracking.

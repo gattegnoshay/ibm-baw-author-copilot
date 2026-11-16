@@ -1,19 +1,8 @@
 ---
 name: generate-baw-business-objects
 description: "Generates and modifies BAW Business Object import files — individual .bo.json files, a combined OpenAPI 3.0 JSON, a discovery report, and an optional toolkit TWX. Use when the user wants to generate Business Objects or BOs for a BAW process app or toolkit, modify an existing BO .json file, handle enum-to-Selection-BO conversion, or package BOs into a reusable TWX toolkit. Always use this skill for BO modifications — even simple field additions, removals, or renames — because the output must comply with BAW's specific OpenAPI format rules, include import instructions, and surface safety warnings when fields are removed or renamed. Three delivery options are available: WebPD UI import, new toolkit TWX, or updating an existing toolkit TWX. This skill covers ONLY Business Object artifacts — for BPMN process generation use generate-baw-bpmn instead."
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Edit
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: Generate BAW Business Objects
-  short_description: Generate and modify importable BAW Business Object files (OpenAPI JSON, TWX toolkit) from any data model description.
-  author: IBM BAW Team
+license: "Apache-2.0"
 ---
-
 # Generate BAW Business Objects
 
 Produce importable BAW Business Objects from any data-model description, generating structured output files and helping the user choose how to deliver them into BAW.

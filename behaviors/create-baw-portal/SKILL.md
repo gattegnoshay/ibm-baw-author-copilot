@@ -1,34 +1,8 @@
 ---
 name: create-baw-portal
-description: >
-  API-knowledge and portal-development skill for IBM® Business Automation Workflow (BAW).
-  Teaches developers which BAW APIs are needed for a requested portal, what they do, how to
-  use them correctly, and how authorization, authentication, CORS, proxies, pagination, and
-  XSRF affect implementation. Supports non-federated (WLE REST) and federated (PFS) environments.
-  Three usage patterns: (1) API guidance only, (2) adapt an existing application, (3) generate
-  a new portal or full application. Carbon is the default design system where appropriate.
-  Does NOT generate BAW process diagrams (BPMN) or internal BAW XML artifacts.
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Edit
-metadata:
-  version: "1.0.0"
-  display_name: BAW Portal Builder
-  short_description: Build IBM BAW task portals — API guidance, portal generation, and existing-app integration for non-federated and PFS environments.
-  author: IBM BAW Team
-  example_prompts:
-    - "Generate a personal task dashboard portal for BAW"
-    - "Which API do I call to get the current user's name in my BAW portal?"
-    - "I have an existing React app — add BAW task list integration using axios"
-    - "How does pagination work with the BAW task list endpoint?"
-    - "Generate a standalone single HTML BAW portal, no build tools"
-    - "We're on Process Federation Server — show me how to fetch a federated task list"
-    - "How do I open a BAW task in an iframe modal?"
-    - "How do I handle XSRF tokens when calling BAW APIs?"
+description: "API-knowledge and portal-development skill for IBM® Business Automation Workflow (BAW). Teaches developers which BAW APIs are needed for a requested portal, what they do, how to use them correctly, and how authorization, authentication, CORS, proxies, pagination, and XSRF affect implementation. Supports non-federated (WLE REST) and federated (PFS) environments. Three usage patterns: (1) API guidance only, (2) adapt an existing application, (3) generate a new portal or full application. Carbon is the default design system where appropriate. Does NOT generate BAW process diagrams (BPMN) or internal BAW XML artifacts."
+license: "Apache-2.0"
 ---
-
 <!-- baw-rest-ops: baw-wle-v1.26.0.0.json: /user/current, /tasks, /task/{taskId}, /searches/tasks, /searches/tasks/{idOrName}, /searches/actions, /searches/tasks/meta/fields, /searches/tasks/meta/constraintFields, /searches/tasks/meta/businessDataFields, /managedGlobalTeams, /globalTeams, /globalTeamUsers/{id}, /team/{teamId}, /team, /group/{groupNameOrID}, /exposed, /process -->
 <!-- baw-rest-ops: baw-wle-v2.26.0.0.json: /search, /search/queries, /dashboards/teamsummary, /dashboards/teamsummary/{teamId}, /dashboards/teammember/{teamId}, /dashboards/teammember/{teamId}/{username}, /dashboards/teamtasks, /dashboards/teamtasks/{teamId}, /dashboards/teamtasktrend/{teamId} -->
 <!-- baw-rest-ops: baw-pfs-v1.26.0.0.json: /tasks, /systems, /launchableEntities, /searches/tasks, /searches/tasks/{idOrName}, /searches/actions, /searches/meta/fields, /searches/meta/constraintFields, /searches/meta/businessDataFields, /searches/meta/taskStatus, /searches/meta/priority, /instances, /globalTeams -->

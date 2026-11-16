@@ -1,17 +1,8 @@
 ---
 name: baw-export-import-helper
-description: Migrate IBM BAW or CP4BA Process Apps, toolkits, case solutions, and Business Applications from one environment to another, automatically resolving toolkit dependencies and determining the correct import order. Use when someone says "migrate my process app", "move my workflow to another environment", "export and import BAW projects", "copy my toolkit to production", "migrate between BAW servers", or "transfer my process application". Also use proactively when a user describes environment promotion (dev to test to prod), environment consolidation, disaster recovery restores, or any scenario where BAW artifacts need to move between servers.
-allowed-tools:
-  - execute
-  - write
-  - read
-  - fetch
-license: Apache-2.0
-metadata:
-  version: "1.0.0"
+description: "Migrate IBM BAW or CP4BA Process Apps, toolkits, case solutions, and Business Applications from one environment to another, automatically resolving toolkit dependencies and determining the correct import order. Use when someone says \"migrate my process app\", \"move my workflow to another environment\", \"export and import BAW projects\", \"copy my toolkit to production\", \"migrate between BAW servers\", or \"transfer my process application\". Also use proactively when a user describes environment promotion (dev to test to prod), environment consolidation, disaster recovery restores, or any scenario where BAW artifacts need to move between servers."
+license: "Apache-2.0"
 ---
-
-
 > **⚠️ REST only. MCP is not supported by this skill.** All BAW interactions use the BAW REST API exclusively via HTTP calls. Do not call any MCP tools at any point, regardless of whether an MCP server is connected or not. This skill has no MCP dependency. If you find yourself reaching for an MCP tool, stop and use the REST equivalent from `references/baw-rest.md` instead.
 
 # BAW export and import helper

@@ -1,37 +1,8 @@
 ---
 name: create-baw-external-task-ui
-description: >
-  Generate a custom external task UI for an IBM Business Automation Workflow (BAW)
-  human task configured with a Custom URL. Creates a Node.js Express server and a
-  React (default) or user-specified stack UI that fetches task data from BAW,
-  renders a Carbon-styled form, and completes the task on submission. Two intake
-  paths: provide a task schema file (OpenAPI exported from your BAW service flow) or
-  describe task fields verbally (generating a unified fields-spec.json). Includes
-  instructions for exporting the schema from BAW and setting the External Implementation
-  URL with {tw.system.task_id}. Use when building an external Node.js app for a BAW
-  Custom URL task or integrating with the BAW /bpm/user-tasks REST endpoints. Do NOT
-  use for task list portals (use create-baw-portal) or BAW Coach View widgets (use
-  create-baw-widget). Trigger phrases: "external task UI", "custom URL task",
-  "BAW external UI", "node.js BAW task", "external implementation", "Custom URL implementation".
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Edit
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: BAW External Task UI Builder
-  short_description: Generate a React + Express external task UI for IBM BAW Custom URL human tasks — with Carbon styling and full BAW REST API integration.
-  author: IBM BAW Team
-  example_prompts:
-    - "Create an external task UI for a Manager Approval task in BAW"
-    - "Build a Node.js app to complete a BAW user task via Custom URL"
-    - "Generate an external UI for my BAW task — here is my task schema file"
-    - "Create a React form for a BAW human task with fields: firstName, lastName, approved"
-    - "How do I export the OpenAPI spec from my BAW service flow?"
+description: "Generate a custom external task UI for an IBM Business Automation Workflow (BAW) human task configured with a Custom URL. Creates a Node.js Express server and a React (default) or user-specified stack UI that fetches task data from BAW, renders a Carbon-styled form, and completes the task on submission. Two intake paths: provide a task schema file (OpenAPI exported from your BAW service flow) or describe task fields verbally (generating a unified fields-spec.json). Includes instructions for exporting the schema from BAW and setting the External Implementation URL with {tw.system.task_id}. Use when building an external Node.js app for a BAW Custom URL task or integrating with the BAW /bpm/user-tasks REST endpoints. Do NOT use for task list portals (use create-baw-portal) or BAW Coach View widgets (use create-baw-widget). Trigger phrases: \"external task UI\", \"custom URL task\", \"BAW external UI\", \"node.js BAW task\", \"external implementation\", \"Custom URL implementation\"."
+license: "Apache-2.0"
 ---
-
 ## What this skill builds
 
 A BAW human task configured with a **Custom URL** opens an external application when

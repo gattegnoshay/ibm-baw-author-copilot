@@ -1,19 +1,8 @@
 ---
 name: generate-baw-bpmn
-description: Generates BPMN 2.0 XML that imports cleanly into IBM Business Automation Workflow (BAW) — processes and complex business object variables (via a bundled XSD) — by writing a process JSON and running a bundled deterministic generator that emits BAW's own export dialect and packages the .zip the import wizards expect. Use whenever the user wants a BPMN file for BAW, asks to "generate BPMN," "create a .bpmn I can import," "turn this workflow into a BAW process/service flow," mentions BPMN import errors or elements disappearing on import, or has a process source in any form — a chat description, a requirements/BRD/blueprint document, an SOP, meeting notes, or an earlier blueprint parse — and needs the importable XML. Also triggers on conversational process descriptions like "I want to model a workflow for…" or "help me design a process for…".
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Edit
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: Generate BAW BPMN
-  short_description: Generate importable BPMN 2.0 XML files and bundled XSD for IBM BAW from any process description, document, or chat input.
-  author: IBM BAW Team
+description: "Generates BPMN 2.0 XML that imports cleanly into IBM Business Automation Workflow (BAW) — processes and complex business object variables (via a bundled XSD) — by writing a process JSON and running a bundled deterministic generator that emits BAW's own export dialect and packages the .zip the import wizards expect. Use whenever the user wants a BPMN file for BAW, asks to \"generate BPMN,\" \"create a .bpmn I can import,\" \"turn this workflow into a BAW process/service flow,\" mentions BPMN import errors or elements disappearing on import, or has a process source in any form — a chat description, a requirements/BRD/blueprint document, an SOP, meeting notes, or an earlier blueprint parse — and needs the importable XML. Also triggers on conversational process descriptions like \"I want to model a workflow for…\" or \"help me design a process for…\"."
+license: "Apache-2.0"
 ---
-
 # Generate BAW BPMN
 
 Produce a BPMN 2.0 file that imports successfully into IBM BAW on the first attempt.

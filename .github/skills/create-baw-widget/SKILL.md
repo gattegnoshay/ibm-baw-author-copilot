@@ -1,19 +1,8 @@
 ---
 name: create-baw-widget
-description: Creates or modifies IBM Business Automation Workflow (BAW) custom Coach View widgets — the widgets/{WidgetName}/ folder structure with Layout.html, InlineCSS.css, inlineJavascript.js, config.json, business object JSON, optional event handlers, and BAW-integrated preview files — then packages them into an importable .twx toolkit file. Use this whenever the user asks to build, scaffold, update, or fix a BAW/BPM coach widget, custom coach view, or "widget" in a BAW/BPMN/Process Designer project — including requests like "add a new coach widget for X", "package my widgets into a TWX", "this widget's preview isn't showing in the designer", "the widget isn't picking up my list data", or "style this widget with the Carbon theme." Does not deploy to a BAW server — that is a separate step.
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Edit
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: BAW Coach Widget Builder
-  short_description: Scaffold, modify, and package IBM BAW custom Coach View widgets into an importable TWX toolkit file.
-  author: IBM BAW Team
+description: "Creates or modifies IBM Business Automation Workflow (BAW) custom Coach View widgets — the widgets/{WidgetName}/ folder structure with Layout.html, InlineCSS.css, inlineJavascript.js, config.json, business object JSON, optional event handlers, and BAW-integrated preview files — then packages them into an importable .twx toolkit file. Use this whenever the user asks to build, scaffold, update, or fix a BAW/BPM coach widget, custom coach view, or \"widget\" in a BAW/BPMN/Process Designer project — including requests like \"add a new coach widget for X\", \"package my widgets into a TWX\", \"this widget's preview isn't showing in the designer\", \"the widget isn't picking up my list data\", or \"style this widget with the Carbon theme.\" Does not deploy to a BAW server — that is a separate step."
+license: "Apache-2.0"
 ---
-
 # Create BAW Widget
 
 Build or modify an IBM BAW (Business Automation Workflow) custom Coach View widget, then package it into an importable `.twx` toolkit file. A widget lives under `widgets/{WidgetName}/` in a BAW toolkit project and is a small bundle of HTML/CSS/JS that BAW's Coach Designer loads into a running coach.

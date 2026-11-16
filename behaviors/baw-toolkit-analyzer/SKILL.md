@@ -1,19 +1,8 @@
 ---
 name: baw-toolkit-analyzer
-description: 'Analyzes IBM BAW toolkit dependencies from a TWX export. Maps direct and transitive toolkit dependencies, tracks snapshot versions, and flags missing, conflicting, circular, outdated, and unused dependencies. Supports where-used (what artifacts reference a toolkit) and what-uses (what toolkits an app consumes) analysis. Use when a BAW admin or developer needs to understand toolkit structure, assess upgrade impact, audit before deployment, or answer questions like "what toolkits does this app depend on?", "is this toolkit safe to remove?", "do I have circular toolkit deps?". Trigger phrases: toolkit dependencies, toolkit dependency graph, where is this toolkit used, analyze toolkit, toolkit impact, missing toolkit, circular toolkit, outdated snapshot, unnecessary dependency, toolkit analyzer, TWX toolkit.'
-license: Apache-2.0
-compatibility: "IBM BAW 22.x and later; IBM CP4BA 22.x and later"
-allowed-tools:
-  - Read
-  - Edit
-  - Bash
-metadata:
-  version: "1.0.0"
-  display_name: BAW Toolkit Analyzer
-  short_description: Map direct and transitive toolkit dependencies in a BAW TWX export and flag missing, circular, conflicting, and unused dependencies.
-  author: IBM BAW Team
+description: "Analyzes IBM BAW toolkit dependencies from a TWX export. Maps direct and transitive toolkit dependencies, tracks snapshot versions, and flags missing, conflicting, circular, outdated, and unused dependencies. Supports where-used (what artifacts reference a toolkit) and what-uses (what toolkits an app consumes) analysis. Use when a BAW admin or developer needs to understand toolkit structure, assess upgrade impact, audit before deployment, or answer questions like \"what toolkits does this app depend on?\", \"is this toolkit safe to remove?\", \"do I have circular toolkit deps?\". Trigger phrases: toolkit dependencies, toolkit dependency graph, where is this toolkit used, analyze toolkit, toolkit impact, missing toolkit, circular toolkit, outdated snapshot, unnecessary dependency, toolkit analyzer, TWX toolkit."
+license: "Apache-2.0"
 ---
-
 # BAW Toolkit Dependency and Usage Analyzer
 
 Analyze the toolkit dependencies inside a BAW process application TWX export and produce a full dependency report: direct and transitive dependencies, snapshot tracking, conflict and gap detection, and upgrade impact analysis.
