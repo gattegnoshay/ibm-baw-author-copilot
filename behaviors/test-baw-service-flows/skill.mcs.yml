@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "test-baw-service-flows"
+  description: "Generate and execute automated tests for IBM BAW Service Flows. Phase A discovers the Service Flow, reads its input/output contract, and produces a structured test suite covering happy path, error paths, and boundary conditions. Phase B invokes the Service Flow — preferring the exposed Automation Service OpenAPI endpoint, falling back to direct service start, then to a process fallback — and returns a structured test report. Use when the user says 'test this service flow', 'generate tests for..."
+  schemaName: cr4f3_ibmbawauthor.skill.testbawserviceflows_JEk
+  bundle: cr4f3_ibmbawauthor.file.testbawserviceflowszip_GnhEd
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_1Lpq5
+kind: InlineAgentSkill
+authoringSource: Upload

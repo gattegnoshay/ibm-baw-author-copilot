@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "generate-baw-bpmn"
+  description: "Generates BPMN 2.0 XML that imports cleanly into IBM Business Automation Workflow (BAW) — processes and complex business object variables (via a bundled XSD) — by writing a process JSON and running a bundled deterministic generator that emits BAW's own export dialect and packages the .zip the import wizards expect. Use whenever the user wants a BPMN file for BAW, asks to \"generate BPMN,\" \"create a .bpmn I can import,\" \"turn this workflow into a BAW process/service flow,\" mentions BPMN import ..."
+  schemaName: cr4f3_ibmbawauthor.skill.generatebawbpmn_GAT
+  bundle: cr4f3_ibmbawauthor.file.generatebawbpmnzip_uLNrR
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_lanXx
+kind: InlineAgentSkill
+authoringSource: Upload

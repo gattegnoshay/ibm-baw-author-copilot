@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "create-baw-portal"
+  description: "API-knowledge and portal-development skill for IBM® Business Automation Workflow (BAW). Teaches developers which BAW APIs are needed for a requested portal, what they do, how to use them correctly, and how authorization, authentication, CORS, proxies, pagination, and XSRF affect implementation. Supports non-federated (WLE REST) and federated (PFS) environments. Three usage patterns: (1) API guidance only, (2) adapt an existing application, (3) generate a new portal or full application. Carbon..."
+  schemaName: cr4f3_ibmbawauthor.skill.createbawportal_A8I
+  bundle: cr4f3_ibmbawauthor.file.createbawportalzip_ATBGP
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_56RkG
+kind: InlineAgentSkill
+authoringSource: Upload

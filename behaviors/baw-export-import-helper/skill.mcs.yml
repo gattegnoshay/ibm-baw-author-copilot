@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "baw-export-import-helper"
+  description: "Migrate IBM BAW or CP4BA Process Apps, toolkits, case solutions, and Business Applications from one environment to another, automatically resolving toolkit dependencies and determining the correct import order. Use when someone says \"migrate my process app\", \"move my workflow to another environment\", \"export and import BAW projects\", \"copy my toolkit to production\", \"migrate between BAW servers\", or \"transfer my process application\". Also use proactively when a user describes environment prom..."
+  schemaName: cr4f3_ibmbawauthor.skill.bawexportimporthelper_GAs
+  bundle: cr4f3_ibmbawauthor.file.bawexportimporthelperzip_FfaJv
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_gkmfR
+kind: InlineAgentSkill
+authoringSource: Upload

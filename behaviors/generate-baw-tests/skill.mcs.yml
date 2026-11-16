@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "generate-baw-tests"
+  description: "Use when a BAW developer wants to generate or execute automated tests for an IBM BAW process app, case application, or service flow. Covers two phases: Phase A analyzes artifacts and generates a structured test suite file (processes and coaches); Phase B executes process tests end-to-end (start instance, claim tasks, update task data, complete tasks, assert each step and final state). Use when the user says 'generate tests for my process', 'run my test suite', 'test this service', 'test all p..."
+  schemaName: cr4f3_ibmbawauthor.skill.generatebawtests_iHw
+  bundle: cr4f3_ibmbawauthor.file.generatebawtestszip_wHOM3
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_zemEL
+kind: InlineAgentSkill
+authoringSource: Upload

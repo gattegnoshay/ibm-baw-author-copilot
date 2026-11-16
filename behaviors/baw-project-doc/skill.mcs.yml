@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "baw-project-doc"
+  description: "Generates comprehensive, up-to-date documentation for IBM Business Automation Workflow (BAW) applications by analyzing process models, services, integrations, business objects, and application artifacts — no MCP server or live server connection required. Accepts three input types: a TWX export file, a BPMN + XSD pair (output of the generate-baw-bpmn skill), or a ZIP archive containing a BPMN + XSD. Use whenever the user wants to document a BAW application, generate technical or functional doc..."
+  schemaName: cr4f3_ibmbawauthor.skill.bawprojectdoc_vKN
+  bundle: cr4f3_ibmbawauthor.file.bawprojectdoczip_Qx0KA
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_GkOZi
+kind: InlineAgentSkill
+authoringSource: Upload

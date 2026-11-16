@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "process-compliance-violation-detection"
+  description: "Evaluate IBM BAW and CP4BA process applications against compliance, governance, regulatory, business policy, architecture, or standards documents (for example, SOX, GDPR, ISO, or corporate policies). Detects violations, gaps, risks, and missing controls, then recommends remediation using documented BAW/CP4BA platform capabilities. Use for: compliance checks, policy audits, governance reviews, flagging violations before production, or when the user says \"does this process comply\", \"compliance ..."
+  schemaName: cr4f3_ibmbawauthor.skill.processcomplianceviolationdetection_mem
+  bundle: cr4f3_ibmbawauthor.file.processcomplianceviolationdetectionzip_Vqhf9
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_MD1hJ
+kind: InlineAgentSkill
+authoringSource: Upload

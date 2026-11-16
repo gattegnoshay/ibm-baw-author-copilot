@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "baw-dependency-mapper"
+  description: "Maps all usages and dependencies of a specified variable or Business Object (BO) across an entire IBM BAW process application by analyzing the TWX export. Produces a dependency graph showing declarations, read/write usages, service I/O bindings, and coach bindings; detects circular BO references, redundant service calls touching the same BO, and over-coupling. Use when the user asks to analyze dependencies of a variable or BO, map where a BO is used, detect circular references, assess the imp..."
+  schemaName: cr4f3_ibmbawauthor.skill.bawdependencymapper_qhZ
+  bundle: cr4f3_ibmbawauthor.file.bawdependencymapperzip_suwlo
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_I1faD
+kind: InlineAgentSkill
+authoringSource: Upload

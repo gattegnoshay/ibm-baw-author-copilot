@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "review-baw-code"
+  description: "Perform automated, severity-ranked code quality reviews across IBM BAW artifacts — server scripts, coach (client-side) scripts, integration service scripts, HTML, CSS, and optionally a Checkstyle XML report. Accepts an uploaded .twx file directly and extracts it automatically. Flags hardcoded values (URLs, credentials, IPs), undeclared tw.local.* variables, inconsistent error-logging patterns, synchronous Thread.sleep calls, unbounded loops, and other performance anti-patterns. Each finding i..."
+  schemaName: cr4f3_ibmbawauthor.skill.reviewbawcode_Q31
+  bundle: cr4f3_ibmbawauthor.file.reviewbawcodezip_MtIum
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_uphw6
+kind: InlineAgentSkill
+authoringSource: Upload

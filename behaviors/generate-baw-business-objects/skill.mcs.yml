@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "generate-baw-business-objects"
+  description: "Generates and modifies BAW Business Object import files — individual .bo.json files, a combined OpenAPI 3.0 JSON, a discovery report, and an optional toolkit TWX. Use when the user wants to generate Business Objects or BOs for a BAW process app or toolkit, modify an existing BO .json file, handle enum-to-Selection-BO conversion, or package BOs into a reusable TWX toolkit. Always use this skill for BO modifications — even simple field additions, removals, or renames — because the output must c..."
+  schemaName: cr4f3_ibmbawauthor.skill.generatebawbusinessobjects_RSh
+  bundle: cr4f3_ibmbawauthor.file.generatebawbusinessobjectszip_sMHsj
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_cZoZH
+kind: InlineAgentSkill
+authoringSource: Upload

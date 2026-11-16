@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "baw-toolkit-analyzer"
+  description: "Analyzes IBM BAW toolkit dependencies from a TWX export. Maps direct and transitive toolkit dependencies, tracks snapshot versions, and flags missing, conflicting, circular, outdated, and unused dependencies. Supports where-used (what artifacts reference a toolkit) and what-uses (what toolkits an app consumes) analysis. Use when a BAW admin or developer needs to understand toolkit structure, assess upgrade impact, audit before deployment, or answer questions like \"what toolkits does this app ..."
+  schemaName: cr4f3_ibmbawauthor.skill.bawtoolkitanalyzer_1al
+  bundle: cr4f3_ibmbawauthor.file.bawtoolkitanalyzerzip_HLknF
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_wrA8k
+kind: InlineAgentSkill
+authoringSource: Upload

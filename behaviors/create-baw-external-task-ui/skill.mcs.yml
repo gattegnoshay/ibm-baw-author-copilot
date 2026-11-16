@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "create-baw-external-task-ui"
+  description: "Generate a custom external task UI for an IBM Business Automation Workflow (BAW) human task configured with a Custom URL. Creates a Node.js Express server and a React (default) or user-specified stack UI that fetches task data from BAW, renders a Carbon-styled form, and completes the task on submission. Two intake paths: provide a task schema file (OpenAPI exported from your BAW service flow) or describe task fields verbally (generating a unified fields-spec.json). Includes instructions for e..."
+  schemaName: cr4f3_ibmbawauthor.skill.createbawexternaltaskui_Hf5
+  bundle: cr4f3_ibmbawauthor.file.createbawexternaltaskuizip_mXMky
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_3H4PA
+kind: InlineAgentSkill
+authoringSource: Upload

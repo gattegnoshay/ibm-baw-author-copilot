@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "audit-baw-readiness"
+  description: "Evaluates an IBM Business Automation Workflow (BAW) process application's design for compliance and audit readiness — scores six internal design-time control domains (traceability, separation of duties, access control, SLA/timeliness, data completeness, error handling) and produces a Markdown scorecard with specific gaps and remediation steps. Use when someone asks if a process application is ready for an audit, checks internal control design readiness, or wants to score design-time controls...."
+  schemaName: cr4f3_ibmbawauthor.skill.auditbawreadiness_PsW
+  bundle: cr4f3_ibmbawauthor.file.auditbawreadinesszip_tM2rc
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_oRtrB
+kind: InlineAgentSkill
+authoringSource: Upload

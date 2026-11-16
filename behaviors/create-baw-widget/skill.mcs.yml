@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "create-baw-widget"
+  description: "Creates or modifies IBM Business Automation Workflow (BAW) custom Coach View widgets — the widgets/{WidgetName}/ folder structure with Layout.html, InlineCSS.css, inlineJavascript.js, config.json, business object JSON, optional event handlers, and BAW-integrated preview files — then packages them into an importable .twx toolkit file. Use this whenever the user asks to build, scaffold, update, or fix a BAW/BPM coach widget, custom coach view, or \"widget\" in a BAW/BPMN/Process Designer project ..."
+  schemaName: cr4f3_ibmbawauthor.skill.createbawwidget_tTR
+  bundle: cr4f3_ibmbawauthor.file.createbawwidgetzip_Jf6Ay
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_FdBOz
+kind: InlineAgentSkill
+authoringSource: Upload

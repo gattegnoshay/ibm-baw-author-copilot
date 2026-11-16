@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "baw-endpoint-validation"
+  description: "Use when a BAW administrator wants to validate a process application before installing it on a new server — asking what new server to target, collecting source and target endpoints, scanning the TWX export for hardcoded references to the old server, and generating a report of findings. Supports both traditional BAW (reads BPMConfig .properties files or runs BPMConfig -export) and CP4BA containerized deployments on OpenShift (reads the ICP4ACluster custom resource via oc get). Trigger phrases:..."
+  schemaName: cr4f3_ibmbawauthor.skill.bawendpointvalidation_9Jx
+  bundle: cr4f3_ibmbawauthor.file.bawendpointvalidationzip_rJoYy
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_wBfsp
+kind: InlineAgentSkill
+authoringSource: Upload

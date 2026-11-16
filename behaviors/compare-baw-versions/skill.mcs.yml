@@ -1,0 +1,8 @@
+mcs.metadata:
+  componentName: "compare-baw-versions"
+  description: "Use when an IBM Business Automation Workflow (BAW) developer or administrator wants to compare two versions (snapshots or branches) of a process application. Exports both versions and produces a structured diff by artifact type: process steps, gateways, variables, business objects, services, scripts, and configuration. Flags artifacts that changed in both versions as conflict hints so the developer knows what to reconcile manually in BAW Process Designer. Use when the user says 'what changed ..."
+  schemaName: cr4f3_ibmbawauthor.skill.comparebawversions_jpj
+  bundle: cr4f3_ibmbawauthor.file.comparebawversionszip_RHmGx
+  manifestSchemaName: cr4f3_ibmbawauthor.file.skillmd_6Xzoq
+kind: InlineAgentSkill
+authoringSource: Upload
